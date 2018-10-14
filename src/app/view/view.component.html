@@ -1,0 +1,38 @@
+<table>
+  <tr>
+    <th>Vorname</th>
+    <th>Nachname</th>
+    <th>E-Mail</th>
+    <th>Straße</th>
+    <th>Nr.</th>
+    <th>PLZ</th>
+    <th>Ort</th>
+    <th>Vorwahl</th>
+    <th>Rufnummer</th>
+    <th>Führerschein</th>
+    <th>Tarif</th>
+    <th>Rabatt</th>
+    <th>Referenz</th>
+    <th>AGB</th>
+    <th>Datenschutz</th>
+    <th>Preise</th>
+  </tr>
+  <tr *ngFor="let registrationModel of registrationModels">
+    <td>{{registrationModel.firstName}}</td>
+    <td>{{registrationModel.surName}}</td>
+    <td>{{registrationModel.email}}</td>
+    <td>{{registrationModel.street}}</td>
+    <td>{{registrationModel.houseNo}}</td>
+    <td>{{registrationModel.postCode}}</td>
+    <td>{{registrationModel.city}}</td>
+    <td>{{registrationModel.preDial}}</td>
+    <td>{{registrationModel.phoneNumber}}</td>
+    <td><img [src]="registrationModel.drivingLicensePath" style="widows: 150px;height: 100px;border:0px"></td>
+    <td>{{registrationModel.tariff}}</td>
+    <td>{{registrationModel.discount}}</td>
+    <td>{{registrationModel.reference}}</td>
+    <td>{{registrationModel.termsAndConditionsAccepted}}</td>
+    <td>{{registrationModel.privacyPolicyAccepted}}</td>
+    <td>{{registrationModel.priceListAccepted}}</td>
+  </tr>
+</table>
