@@ -35,7 +35,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/client",
+            "outputPath": "dist/registration-administration",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -146,5 +146,5 @@
       }
     }
   },
-  "defaultProject": "client"
+  "defaultProject": "registration-administration"
 }
